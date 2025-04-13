@@ -2,7 +2,7 @@ package co.com.practice.stepdefinitions;
 
 import co.com.practice.exceptions.AssertionsServices;
 import co.com.practice.questions.*;
-import co.com.practice.taks.*;
+import co.com.practice.tasks.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import java.util.List;

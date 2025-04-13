@@ -1,4 +1,4 @@
-package co.com.practice.taks;
+package co.com.practice.tasks;
 
 import co.com.practice.utils.templates.MergeFrom;
 import net.serenitybdd.screenplay.Actor;

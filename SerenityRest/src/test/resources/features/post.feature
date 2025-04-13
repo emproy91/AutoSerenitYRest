@@ -13,5 +13,5 @@ Feature: Information post user
 
     Examples:
       | name     | job    |
-      ##@externaldata@./src/test/resources/data/Testdata.xlsx@Sheet1@1
-   |morpheus   |leader|
+       ##@externaldata@./src/test/resources/data/Testdata.xlsx@Sheet1@1
+      |Ramon   |CTO|

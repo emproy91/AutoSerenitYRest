@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Send information list get users with response success</title>
+    <title>Send information post user with response success</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -126,8 +126,8 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-            > <a href="f1965618b8c7794049a8ea8e2d0c35710668d5dd8edc195d5e117da0b3a84c1f.html">Information List Get Users</a>
-        > Send information list get users with response success
+            > <a href="4c4859a4706f3068c9d120304c2a3cc8cc860580911fd5e1f041a058464d50aa.html">Information Post User</a>
+        > Send information post user with response success
         </span>
         </div>
         <div class="rightbg"></div>
@@ -148,7 +148,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-04-2025 18:58</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-04-2025 00:04</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -163,7 +163,7 @@
                                 <div>
                                     <h3 class="discreet-story-header">
                                         <i class="fa fa-2x fa-comments-o"></i>
-                                        <span class="story-header-title">Information List Get Users </span>
+                                        <span class="story-header-title">Information Post User </span>
                                     </h3>
 
                                 </div>
@@ -181,7 +181,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">
-                                    Send information list get users with response success
+                                    Send information post user with response success
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -240,9 +240,45 @@
 
     <div class="clr"></div>
 
+        <div class="story-title">
+            <h3 class="story-header">Scenario Outline</h3>
+
+            <div class="scenario">Given Load customer information<br><table class='embedded'><thead><th>name</th><th>job</th></thead><tbody><tr><td>&lt;name&gt;</td><td>&lt;job&gt;</td></tr></tbody></table><br>When Call Post user API<br>Then Should see the code 201<br>And Validate quantity key is 4<br>And Validate schema request "PostJsonSchema"<br>And Validate field post response api<br>And Validate post response contain data initial</div>
+
+        </div>
 
     <div id="beforetable"></div>
 
+
+            <h3 class="story-header">Examples:&nbsp;</h3>
+                <div class="requirementNarrative"></div>
+
+
+                <p class="example-tag">
+                </p>
+
+            <div class="example-table test-report">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                            <th>Name</th>
+                            <th>Job</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#0">1</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Ramon</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">CTO</a>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
     <div id="tablecontents">
         <div>
@@ -277,7 +313,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                    style="display:block;">
                                     <span class="top-level-step">
-                                                Given Load customer information<br><table class='embedded'><tbody><tr><td>page</td></tr><tr><td>1</td></tr></tbody></table>
+                                                Example: {name=Ramon, job=CTO}
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -286,7 +322,7 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.18s</span></td>
+                        <td width="100"><span class="top-level-step">5.97s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -296,7 +332,38 @@
 
                         <td width="70" class="step-icon">
                             <a name="0-0"></a>
-                                <span style="margin-left: 40px;"
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-0 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Given Load customer information<br><table class='embedded'><thead><th>name</th><th>job</th></thead><tbody><tr><td>Ramon</td><td>CTO</td></tr></tbody></table>
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">0.33s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-0-0"></a>
+                                <span style="margin-left: 60px;"
                                       class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
@@ -312,7 +379,7 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100"><span class="nested-group-step">0.01s</span></td>
                     </tr>
 
                                 </table>
@@ -320,52 +387,21 @@
                         </tr>
                     <tr class="test-SUCCESS">
 
-                        <td width="50" class="step-icon">
-                            <a name="1"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection1 success-icon"
-                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
-                                </a>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
-                                   style="display:block;">
-                                    <span class="top-level-step">
-                                                When Call Get user API
-                                        </span>
-                                </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">2.59s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection1" class="step-table-nested" style="display:none;">
-
-                    <tr class="test-SUCCESS">
-
                         <td width="70" class="step-icon">
-                            <a name="1-0"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                            <a name="0-1"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection1-0 success-icon"
+                                    <i class="fa fa-plus-square-o imgstepSection0-1 success-icon"
                                        style="margin-left: 40px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                Reqres consume get
+                                                When Call Post user API
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -374,79 +410,17 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">2.58s</span></td>
+                        <td width="100"><span class="nested-step">4.09s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
-                                <table id="stepSection1-0" class="step-table-nested" style="display:none;">
+                                <table id="stepSection0-1" class="step-table-nested" style="display:none;">
 
                     <tr class="test-SUCCESS">
 
                         <td width="90" class="step-icon">
-                            <a name="1-0-0"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0-0')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection1-0-0 success-icon"
-                                       style="margin-left: 60px; float:left; padding-right:5px"></i>
-                                </a>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0-0')"
-                                   style="display:block;">
-                                    <span class="nested-step">
-                                                Reqres execute get
-                                        </span>
-                                </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">2.57s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection1-0-0" class="step-table-nested" style="display:none;">
-
-                    <tr class="test-SUCCESS">
-
-                        <td width="110" class="step-icon">
-                            <a name="1-0-0-0"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0-0-0')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection1-0-0-0 success-icon"
-                                       style="margin-left: 80px; float:left; padding-right:5px"></i>
-                                </a>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0-0-0')"
-                                   style="display:block;">
-                                    <span class="nested-step">
-                                                Reqres executes a GET on the resource /api/users
-                                        </span>
-                                </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">2.17s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection1-0-0-0" class="step-table-nested" style="display:none;">
-
-                    <tr class="test-SUCCESS">
-
-                        <td width="130" class="step-icon">
-                            <a name="1-0-0-0-0"></a>
-                                <span style="margin-left: 100px;"
+                            <a name="0-1-0"></a>
+                                <span style="margin-left: 60px;"
                                       class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
@@ -454,34 +428,149 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                GET https://reqres.in/api/users?page=1
+                                                Reqres create
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.18s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-1-1"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1-1')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-1-1 success-icon"
+                                       style="margin-left: 60px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1-1')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Reqres consume post
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">3.85s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-1-1" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="110" class="step-icon">
+                            <a name="0-1-1-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1-1-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-1-1-0 success-icon"
+                                       style="margin-left: 80px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1-1-0')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Reqres execute post
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">3.83s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-1-1-0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="130" class="step-icon">
+                            <a name="0-1-1-0-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1-1-0-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-1-1-0-0 success-icon"
+                                       style="margin-left: 100px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1-1-0-0')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Reqres executes a POST on the resource /api/users
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">2.99s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-1-1-0-0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="150" class="step-icon">
+                            <a name="0-1-1-0-0-0"></a>
+                                <span style="margin-left: 120px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                POST https://reqres.in/api/users
                                         </span>
                                 <span class="evidence">
                                         <span class="piece-of-evidence">
                     <span>
                         <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
-                                data-target="#restModal-REST-7">
+                                data-target="#restModal-REST-9">
                             REST Query
                         </button>
                     </span>
                     <!-- Modal -->
                     <div class="rest-query-details">
-                        <div class="collapse multi-collapse" id="restModal-REST-7">
+                        <div class="collapse multi-collapse" id="restModal-REST-9">
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Response</h4>
-                                        <p>Status code: 200</p>
+                                        <p>Status code: 201</p>
                                         <p>Content Type: application/json</p>
                                         <h4>Request Headers</h4>
                                         <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
                                         <h4>Content Body</h4>
-                                        <pre></pre>
+                                        <pre>{<br>    &quot;name&quot;: &quot;Ramon&quot;,<br>    &quot;job&quot;: &quot;CTO&quot;<br>}</pre>
                                         <h4>Request Cookies</h4>
                                         <pre></pre>
                                         <h4>Response Headers</h4>
-                                        <pre>Date: Sat, 12 Apr 2025 23:58:48 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1744324260&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=wzl%2FUbaDc%2B0pKX4tXEpCrjbVoGkMeEmrRWOrSiaaPPU%3D&quot;}]}<br>Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1744324260&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=wzl%2FUbaDc%2B0pKX4tXEpCrjbVoGkMeEmrRWOrSiaaPPU%3D<br>Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;41e-bY3U72nulxuwNd/TmihMEHjLmek&quot;<br>Via: 1.1 vegur<br>Cache-Control: max-age=14400<br>CF-Cache-Status: HIT<br>Age: 3972<br>Vary: Accept-Encoding<br>Server: cloudflare<br>CF-RAY: 92f6ac819d256db9-MIA<br>Content-Encoding: gzip<br>server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=177099&amp;min_rtt=171442&amp;rtt_var=75606&amp;sent=6&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=3111&amp;recv_bytes=722&amp;delivery_rate=20211&amp;cwnd=191&amp;unsent_bytes=0&amp;cid=7aabf8979fab74c0&amp;ts=405&amp;x=0&quot;</pre>
+                                        <pre>Date: Sun, 13 Apr 2025 05:04:22 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 78<br>Connection: keep-alive<br>Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1744520662&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=289DKmgY1PT3JLUlgAUOlO4PO7K5lh5iCoDcwkJoJQU%3D&quot;}]}<br>Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1744520662&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=289DKmgY1PT3JLUlgAUOlO4PO7K5lh5iCoDcwkJoJQU%3D<br>Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;4e-muyDO7++En84wVOrDKG1dmSbclQ&quot;<br>Via: 1.1 vegur<br>cf-cache-status: DYNAMIC<br>Server: cloudflare<br>CF-RAY: 92f86c192dfca528-MIA<br>server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=84922&amp;min_rtt=79928&amp;rtt_var=39961&amp;sent=6&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=3110&amp;recv_bytes=773&amp;delivery_rate=36536&amp;cwnd=210&amp;unsent_bytes=0&amp;cid=edf32e468264ffb2&amp;ts=450&amp;x=0&quot;</pre>
                                     <h4>Response Body</h4>
-                                        <pre>{<br>    &quot;page&quot;: 1,<br>    &quot;per_page&quot;: 6,<br>    &quot;total&quot;: 12,<br>    &quot;total_pages&quot;: 2,<br>    &quot;data&quot;: [<br>        {<br>            &quot;id&quot;: 1,<br>            &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,<br>            &quot;first_name&quot;: &quot;George&quot;,<br>            &quot;last_name&quot;: &quot;Bluth&quot;,<br>            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;<br>        },<br>        {<br>            &quot;id&quot;: 2,<br>            &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,<br>            &quot;first_name&quot;: &quot;Janet&quot;,<br>            &quot;last_name&quot;: &quot;Weaver&quot;,<br>            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;<br>        },<br>        {<br>            &quot;id&quot;: 3,<br>            &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,<br>            &quot;first_name&quot;: &quot;Emma&quot;,<br>            &quot;last_name&quot;: &quot;Wong&quot;,<br>            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;<br>        },<br>        {<br>            &quot;id&quot;: 4,<br>            &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,<br>            &quot;first_name&quot;: &quot;Eve&quot;,<br>            &quot;last_name&quot;: &quot;Holt&quot;,<br>            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/4-image.jpg&quot;<br>        },<br>        {<br>            &quot;id&quot;: 5,<br>            &quot;email&quot;: &quot;charles.morris@reqres.in&quot;,<br>            &quot;first_name&quot;: &quot;Charles&quot;,<br>            &quot;last_name&quot;: &quot;Morris&quot;,<br>            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/5-image.jpg&quot;<br>        },<br>        {<br>            &quot;id&quot;: 6,<br>            &quot;email&quot;: &quot;tracey.ramos@reqres.in&quot;,<br>            &quot;first_name&quot;: &quot;Tracey&quot;,<br>            &quot;last_name&quot;: &quot;Ramos&quot;,<br>            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/6-image.jpg&quot;<br>        }<br>    ],<br>    &quot;support&quot;: {<br>        &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,<br>        &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;<br>    }<br>}</pre>
+                                        <pre>{<br>    &quot;name&quot;: &quot;Ramon&quot;,<br>    &quot;job&quot;: &quot;CTO&quot;,<br>    &quot;id&quot;: &quot;347&quot;,<br>    &quot;createdAt&quot;: &quot;2025-04-13T05:04:22.103Z&quot;<br>}</pre>
                                 </div>
                             </div>
                         </div>
@@ -512,21 +601,21 @@
                         </tr>
                     <tr class="test-SUCCESS">
 
-                        <td width="50" class="step-icon">
-                            <a name="2"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                        <td width="70" class="step-icon">
+                            <a name="0-2"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection2 success-icon"
-                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                    <i class="fa fa-plus-square-o imgstepSection0-2 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
                                    style="display:block;">
-                                    <span class="top-level-step">
-                                                Then Should see the code 200
+                                    <span class="nested-step">
+                                                Then Should see the code 201
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -534,27 +623,27 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.1s</span></td>
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">0.19s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
-                                <table id="stepSection2" class="step-table-nested" style="display:none;">
+                                <table id="stepSection0-2" class="step-table-nested" style="display:none;">
 
                     <tr class="test-SUCCESS">
 
-                        <td width="70" class="step-icon">
-                            <a name="2-0"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-0')"
+                        <td width="90" class="step-icon">
+                            <a name="0-2-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2-0')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection2-0 success-icon"
-                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                    <i class="fa fa-plus-square-o imgstepSection0-2-0 success-icon"
+                                       style="margin-left: 60px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-0')"
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2-0')"
                                    style="display:block;">
                                     <span class="nested-step">
                                                 Then status code
@@ -566,17 +655,17 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.03s</span></td>
+                        <td width="100"><span class="nested-step">0.05s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
-                                <table id="stepSection2-0" class="step-table-nested" style="display:none;">
+                                <table id="stepSection0-2-0" class="step-table-nested" style="display:none;">
 
                     <tr class="test-SUCCESS">
 
-                        <td width="90" class="step-icon">
-                            <a name="2-0-0"></a>
-                                <span style="margin-left: 60px;"
+                        <td width="110" class="step-icon">
+                            <a name="0-2-0-0"></a>
+                                <span style="margin-left: 80px;"
                                       class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
@@ -592,7 +681,7 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0.02s</span></td>
+                        <td width="100"><span class="nested-group-step">0.05s</span></td>
                     </tr>
 
                                 </table>
@@ -604,21 +693,21 @@
                         </tr>
                     <tr class="test-SUCCESS">
 
-                        <td width="50" class="step-icon">
-                            <a name="3"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                        <td width="70" class="step-icon">
+                            <a name="0-3"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection3 success-icon"
-                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                    <i class="fa fa-plus-square-o imgstepSection0-3 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
                                    style="display:block;">
-                                    <span class="top-level-step">
-                                                And Validate quantity key is 6
+                                    <span class="nested-step">
+                                                And Validate quantity key is 4
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -626,27 +715,27 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.35s</span></td>
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">0.71s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
-                                <table id="stepSection3" class="step-table-nested" style="display:none;">
+                                <table id="stepSection0-3" class="step-table-nested" style="display:none;">
 
                     <tr class="test-SUCCESS">
 
-                        <td width="70" class="step-icon">
-                            <a name="3-0"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3-0')"
+                        <td width="90" class="step-icon">
+                            <a name="0-3-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3-0')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection3-0 success-icon"
-                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                    <i class="fa fa-plus-square-o imgstepSection0-3-0 success-icon"
+                                       style="margin-left: 60px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3-0')"
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3-0')"
                                    style="display:block;">
                                     <span class="nested-step">
                                                 Then the quantity fields service
@@ -658,17 +747,17 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.34s</span></td>
+                        <td width="100"><span class="nested-step">0.7s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
-                                <table id="stepSection3-0" class="step-table-nested" style="display:none;">
+                                <table id="stepSection0-3-0" class="step-table-nested" style="display:none;">
 
                     <tr class="test-SUCCESS">
 
-                        <td width="90" class="step-icon">
-                            <a name="3-0-0"></a>
-                                <span style="margin-left: 60px;"
+                        <td width="110" class="step-icon">
+                            <a name="0-3-0-0"></a>
+                                <span style="margin-left: 80px;"
                                       class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
@@ -684,7 +773,7 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0.34s</span></td>
+                        <td width="100"><span class="nested-group-step">0.7s</span></td>
                     </tr>
 
                                 </table>
@@ -696,21 +785,21 @@
                         </tr>
                     <tr class="test-SUCCESS">
 
-                        <td width="50" class="step-icon">
-                            <a name="4"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                        <td width="70" class="step-icon">
+                            <a name="0-4"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection4 success-icon"
-                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                    <i class="fa fa-plus-square-o imgstepSection0-4 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
                                    style="display:block;">
-                                    <span class="top-level-step">
-                                                And Validate schema request "GetListJsonSchema"
+                                    <span class="nested-step">
+                                                And Validate schema request "PostJsonSchema"
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -718,27 +807,27 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.24s</span></td>
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">0.41s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
-                                <table id="stepSection4" class="step-table-nested" style="display:none;">
+                                <table id="stepSection0-4" class="step-table-nested" style="display:none;">
 
                     <tr class="test-SUCCESS">
 
-                        <td width="70" class="step-icon">
-                            <a name="4-0"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4-0')"
+                        <td width="90" class="step-icon">
+                            <a name="0-4-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4-0')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection4-0 success-icon"
-                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                    <i class="fa fa-plus-square-o imgstepSection0-4-0 success-icon"
+                                       style="margin-left: 60px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4-0')"
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4-0')"
                                    style="display:block;">
                                     <span class="nested-step">
                                                 Then the schema is
@@ -750,17 +839,17 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.24s</span></td>
+                        <td width="100"><span class="nested-step">0.41s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
-                                <table id="stepSection4-0" class="step-table-nested" style="display:none;">
+                                <table id="stepSection0-4-0" class="step-table-nested" style="display:none;">
 
                     <tr class="test-SUCCESS">
 
-                        <td width="90" class="step-icon">
-                            <a name="4-0-0"></a>
-                                <span style="margin-left: 60px;"
+                        <td width="110" class="step-icon">
+                            <a name="0-4-0-0"></a>
+                                <span style="margin-left: 80px;"
                                       class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
@@ -776,7 +865,7 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0.24s</span></td>
+                        <td width="100"><span class="nested-group-step">0.41s</span></td>
                     </tr>
 
                                 </table>
@@ -786,54 +875,23 @@
                                 </table>
                             </td>
                         </tr>
-                    <tr class="test-SUCCESS">
-
-                        <td width="50" class="step-icon">
-                            <a name="5"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection5 success-icon"
-                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
-                                </a>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5')"
-                                   style="display:block;">
-                                    <span class="top-level-step">
-                                                And Validate fields get list response api
-                                        </span>
-                                </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.06s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection5" class="step-table-nested" style="display:none;">
-
                     <tr class="test-SUCCESS">
 
                         <td width="70" class="step-icon">
-                            <a name="5-0"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5-0')"
+                            <a name="0-5"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-5')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection5-0 success-icon"
+                                    <i class="fa fa-plus-square-o imgstepSection0-5 success-icon"
                                        style="margin-left: 40px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection5-0')"
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-5')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                Then the fields get list service response are
+                                                And Validate field post response api
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -842,17 +900,48 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.06s</span></td>
+                        <td width="100"><span class="nested-step">0.04s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
-                                <table id="stepSection5-0" class="step-table-nested" style="display:none;">
+                                <table id="stepSection0-5" class="step-table-nested" style="display:none;">
 
                     <tr class="test-SUCCESS">
 
                         <td width="90" class="step-icon">
-                            <a name="5-0-0"></a>
-                                <span style="margin-left: 60px;"
+                            <a name="0-5-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-5-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-5-0 success-icon"
+                                       style="margin-left: 60px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-5-0')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Then the fields post service response are
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">0.01s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-5-0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="110" class="step-icon">
+                            <a name="0-5-0-0"></a>
+                                <span style="margin-left: 80px;"
                                       class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
@@ -860,7 +949,99 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                Validation fields get list service api response exists
+                                                Validation fields post service api response exists
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.01s</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-6"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-6 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                And Validate post response contain data initial
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">0.03s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-6" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-6-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-6-0 success-icon"
+                                       style="margin-left: 60px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6-0')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Then the fields and values post response are
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">0.03s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-6-0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="110" class="step-icon">
+                            <a name="0-6-0-0"></a>
+                                <span style="margin-left: 80px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Validation fields and values post services response
                                         </span>
                                 <span class="evidence">
                                 </span>
@@ -878,116 +1059,6 @@
                                 </table>
                             </td>
                         </tr>
-                    <tr class="test-SUCCESS">
-
-                        <td width="50" class="step-icon">
-                            <a name="6"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection6 success-icon"
-                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
-                                </a>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6')"
-                                   style="display:block;">
-                                    <span class="top-level-step">
-                                                And Validate list get response contain data expected<br><table class='embedded'><thead><th>page</th><th>per_page</th><th>total</th><th>total_pages</th><th>support_url</th><th>support_text</th><th>id</th><th>email</th><th>first_name</th><th>last_name</th><th>avatar</th></thead><tbody><tr><td>1</td><td>6</td><td>12</td><td>2</td><td>https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral</td><td>Tired of writing endless social media content? Let Content Caddy generate it for you.</td><td>1</td><td>george.bluth@reqres.in</td><td>George</td><td>Bluth</td><td>https://reqres.in/img/faces/1-image.jpg</td></tr></tbody></table>
-                                        </span>
-                                </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.12s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection6" class="step-table-nested" style="display:none;">
-
-                    <tr class="test-SUCCESS">
-
-                        <td width="70" class="step-icon">
-                            <a name="6-0"></a>
-                                <span style="margin-left: 40px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="nested-group-step">
-                                                Reqres load
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0s</span></td>
-                    </tr>
-                    <tr class="test-SUCCESS">
-
-                        <td width="70" class="step-icon">
-                            <a name="6-1"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6-1')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection6-1 success-icon"
-                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
-                                </a>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection6-1')"
-                                   style="display:block;">
-                                    <span class="nested-step">
-                                                Then the fields and values list get response are
-                                        </span>
-                                </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.11s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection6-1" class="step-table-nested" style="display:none;">
-
-                    <tr class="test-SUCCESS">
-
-                        <td width="90" class="step-icon">
-                            <a name="6-1-0"></a>
-                                <span style="margin-left: 60px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="nested-group-step">
-                                                Validation fields and values list get services response
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0.11s</span></td>
-                    </tr>
-
-                                </table>
-                            </td>
-                        </tr>
 
                                 </table>
                             </td>
@@ -995,7 +1066,7 @@
                 <tr class="test-SUCCESS">
                         <td colspan="2"></td>
                     <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>3.84s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>6.21s</em></span></td>
                 </tr>
 
             </table>

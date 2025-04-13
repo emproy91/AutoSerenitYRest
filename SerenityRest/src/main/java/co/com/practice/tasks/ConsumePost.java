@@ -1,4 +1,4 @@
-package co.com.practice.taks;
+package co.com.practice.tasks;
 
 import co.com.practice.interactions.ExecutePost;
 import net.serenitybdd.screenplay.Actor;

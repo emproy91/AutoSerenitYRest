@@ -8,10 +8,7 @@ import org.junit.runner.notification.RunNotifier;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
-/**
-* Personalización del Runner con el cual se puede determinar que busque y modifique los .feature antes de ser ejecutados
-* @since 27/11/2017
-*/
+
 public class CustomRunner extends Runner {
        /**
         * private Class<Cucumber> classValue;

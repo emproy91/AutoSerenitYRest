@@ -3,7 +3,7 @@ package co.com.practice.stepdefinitions;
 import co.com.practice.exceptions.AssertionsServices;
 import co.com.practice.models.TestData;
 import co.com.practice.questions.*;
-import co.com.practice.taks.*;
+import co.com.practice.tasks.*;
 import co.com.practice.utils.resource.WebServiceEndPoints;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

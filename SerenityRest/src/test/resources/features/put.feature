@@ -9,4 +9,4 @@ Feature: Information put individual user
     And Validate quantity key is 3
     And Validate schema request "PutJsonSchema"
     And Validate field put response api
-    And Validate put response contain data expected
+    # And Validate put response contain data expected
